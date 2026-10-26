@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panel de gestión de integrantes y evidencias de Acuerdo Lab.">
+  <title>Gestionar equipo | Acuerdo Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+  <header class="admin-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Volver a Acuerdo Lab">
+        <span class="brand-mark">A</span>
+        <span>Acuerdo<br>Lab</span>
+      </a>
+      <a class="button admin-back" href="index.html">Ver página</a>
+    </div>
+  </header>
+
+  <main class="admin-main shell">
+    <div class="admin-intro">
+      <p class="eyebrow">Contenido del equipo</p>
+      <h1>Gestionar integrantes y evidencias</h1>
+      <p>Actualiza esta información con los datos reales del grupo. Los cambios se verán en la página principal cuando guardes.</p>
+    </div>
+
+    <form id="content-form" class="content-form">
+      <section class="admin-section" aria-labelledby="integrantes-title">
+        <div class="admin-section-title">
+          <div>
+            <p class="eyebrow">Integrantes</p>
+            <h2 id="integrantes-title">Roles, descripciones y reflexiones</h2>
+          </div>
+          <button id="add-member" class="button admin-add" type="button">Agregar integrante</button>
+        </div>
+        <div id="members-editor" class="editor-grid"></div>
+      </section>
+
+      <section class="admin-section" aria-labelledby="evidencias-title">
+        <div class="admin-section-title">
+          <div>
+            <p class="eyebrow">Evidencias</p>
+            <h2 id="evidencias-title">Trabajos y enlaces del proceso</h2>
+          </div>
+          <button id="add-evidence" class="button admin-add" type="button">Agregar evidencia</button>
+        </div>
+        <div id="evidences-editor" class="editor-grid"></div>
+      </section>
+
+      <div class="admin-save-row">
+        <button class="button button-coral" type="submit">Guardar cambios</button>
+        <p id="admin-feedback" aria-live="polite"></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

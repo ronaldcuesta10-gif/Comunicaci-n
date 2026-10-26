@@ -1,0 +1,142 @@
+.admin-page {
+  background: var(--paper);
+}
+
+.admin-header {
+  background: var(--white);
+  border-bottom: 1px solid rgba(22, 56, 58, 0.12);
+}
+
+.admin-back {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.admin-main {
+  padding-bottom: 90px;
+  padding-top: 72px;
+}
+
+.admin-intro {
+  max-width: 740px;
+}
+
+.admin-intro h1 {
+  color: var(--ink);
+  font-size: 3.15rem;
+}
+
+.admin-intro > p:last-child {
+  color: var(--ink-soft);
+  font-size: 1.06rem;
+}
+
+.content-form {
+  margin-top: 54px;
+}
+
+.admin-section {
+  border-top: 1px solid var(--line);
+  padding: 37px 0 48px;
+}
+
+.admin-section-title {
+  align-items: end;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.admin-section-title h2 {
+  font-size: 2rem;
+}
+
+.admin-add {
+  background: var(--ink);
+  color: var(--white);
+  flex: 0 0 auto;
+}
+
+.editor-grid {
+  display: grid;
+  gap: 17px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.editor-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 24px;
+}
+
+.editor-card header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.editor-card h3 {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.remove-item {
+  background: transparent;
+  border: 1px solid var(--coral);
+  color: var(--coral-dark);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 9px;
+}
+
+.editor-card label {
+  color: var(--ink);
+  display: grid;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.admin-save-row {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 20px;
+  padding-top: 34px;
+}
+
+.admin-save-row .button {
+  min-width: 190px;
+}
+
+.admin-save-row p {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .admin-main {
+    padding-top: 48px;
+  }
+
+  .admin-intro h1 {
+    font-size: 2.4rem;
+  }
+
+  .admin-section-title,
+  .admin-save-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+}

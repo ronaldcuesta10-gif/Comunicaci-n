@@ -1,0 +1,9 @@
+{
+  "name": "acuerdo-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Actividad de comunicaciones sobre negociación de plazos y recursos.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
